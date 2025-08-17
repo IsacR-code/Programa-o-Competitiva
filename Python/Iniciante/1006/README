@@ -1,0 +1,43 @@
+# Beecrowd | 1006 | Média 2
+
+[Link para o Problema](https://www.beecrowd.com.br/judge/pt/problems/view/1006 )
+
+## 🎯 Resumo do Problema
+
+A tarefa é ler três notas de um aluno, `A`, `B` e `C`. As notas têm pesos 2, 3 e 5, respectivamente. É preciso calcular a média ponderada dessas notas e exibir o resultado com uma casa decimal, no formato "MEDIA = [resultado]".
+
+---
+
+## 🧠 Lógica da Solução
+
+A solução em Python foi desenvolvida de forma clara e direta, seguindo a lógica da média ponderada e utilizando recursos de formatação de string.
+
+1.  **Leitura das Notas:** As três notas são lidas da entrada padrão. Como são valores que podem conter casas decimais, a função `float()` é aplicada a cada `input()` para converter as strings lidas para o tipo ponto flutuante.
+    ```python
+    A = float(input())
+    B = float(input())
+    C = float(input())
+    ```
+
+2.  **Cálculo da Média Ponderada:** A média é calculada em uma única expressão, aplicando a fórmula da média ponderada: `(notaA * pesoA + notaB * pesoB + notaC * pesoC) / (soma dos pesos)`. A soma dos pesos (2 + 3 + 5) é 10. O resultado é armazenado na variável `media`.
+    ```python
+    media = (A * 2 + B * 3 + C * 5) / 10
+    ```
+
+3.  **Impressão Formatada:** A saída é gerada utilizando uma *f-string*. A parte `{media:.1f}` formata o valor da variável `media` para que seja exibido com exatamente uma casa decimal, cumprindo o requisito de precisão do problema.
+    ```python
+    print(f"MEDIA = {media:.1f}")
+    ```
+
+---
+
+## Análise de Complexidade
+
+*   **Complexidade de Tempo:** `O(1)` - A solução executa um número fixo de operações (três leituras, cálculos aritméticos, uma impressão), resultando em uma complexidade de tempo constante.
+*   **Complexidade de Espaço:** `O(1)` - A quantidade de memória utilizada para as variáveis `A`, `B`, `C` e `media` é constante e não depende dos valores de entrada.
+
+---
+
+## ✅ Status
+
+- [x] Solução enviada e aceita.

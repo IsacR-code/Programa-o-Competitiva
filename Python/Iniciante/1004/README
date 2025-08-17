@@ -1,0 +1,42 @@
+# Beecrowd | 1004 | Produto Simples
+
+[Link para o Problema](https://www.beecrowd.com.br/judge/pt/problems/view/1004 )
+
+## 🎯 Resumo do Problema
+
+A tarefa consiste em ler dois valores inteiros, calcular o produto entre eles e apresentar o resultado. A saída deve seguir o formato "PROD = [resultado]", onde `[resultado]` é o produto dos dois números.
+
+---
+
+## 🧠 Lógica da Solução
+
+A solução em Python é concisa e eficiente, focando em três operações fundamentais: leitura, cálculo e impressão.
+
+1.  **Leitura da Entrada:** Os dois valores inteiros são lidos da entrada padrão, um por linha. A função `input()` captura os valores como texto, e a função `int()` os converte para o tipo numérico inteiro, armazenando-os nas variáveis `A` e `B`.
+    ```python
+    A = int(input())
+    B = int(input())
+    ```
+
+2.  **Cálculo do Produto:** O produto entre `A` e `B` é calculado utilizando o operador de multiplicação (`*`). O resultado desta operação é armazenado na variável `prod`.
+    ```python
+    prod = A * B
+    ```
+
+3.  **Impressão Formatada:** Para garantir que a saída corresponda exatamente ao formato exigido pelo problema, uma *f-string* é utilizada. Ela integra o texto "PROD = " com o valor da variável `prod`, gerando a string final a ser impressa no console.
+    ```python
+    print(f"PROD = {prod}")
+    ```
+
+---
+
+## Análise de Complexidade
+
+*   **Complexidade de Tempo:** `O(1)` - A solução executa um número fixo de operações (leitura, multiplicação, impressão) que não dependem do valor dos números de entrada, caracterizando uma complexidade de tempo constante.
+*   **Complexidade de Espaço:** `O(1)` - A memória utilizada para as variáveis `A`, `B` e `prod` é constante, não escalando com a entrada.
+
+---
+
+## ✅ Status
+
+- [x] Solução enviada e aceita.

@@ -1,0 +1,42 @@
+# Beecrowd | 1003 | Soma Simples
+
+[Link para o Problema](https://www.beecrowd.com.br/judge/pt/problems/view/1003 )
+
+## 🎯 Resumo do Problema
+
+O objetivo é ler dois valores inteiros, `A` e `B`, e calcular a soma entre eles. O resultado deve ser atribuído a uma variável chamada `SOMA` e impresso na tela seguindo o formato "SOMA = [resultado]".
+
+---
+
+## 🧠 Lógica da Solução
+
+A implementação em Python segue exatamente a estrutura solicitada pelo problema, com foco na clareza e na correspondência exata com os nomes de variáveis sugeridos.
+
+1.  **Leitura dos Valores:** Os dois valores inteiros são lidos da entrada padrão em linhas separadas. A função `input()` captura cada valor como uma string, e a função `int()` é usada para convertê-los para o tipo inteiro.
+    ```python
+    A = int(input())
+    B = int(input())
+    ```
+
+2.  **Cálculo da Soma:** A soma dos dois valores é realizada e, conforme a especificação do problema, o resultado é armazenado em uma variável chamada `Soma`.
+    ```python
+    Soma = A + B
+    ```
+
+3.  **Impressão do Resultado:** Uma *f-string* é utilizada para formatar a saída. Isso garante que o texto "SOMA = " seja seguido pelo valor contido na variável `Soma`, produzindo o output no formato exato exigido.
+    ```python
+    print(f"SOMA = {Soma}")
+    ```
+
+---
+
+## Análise de Complexidade
+
+*   **Complexidade de Tempo:** `O(1)` - A solução envolve um número fixo de operações (duas leituras, uma soma, uma impressão) que são executadas em tempo constante.
+*   **Complexidade de Espaço:** `O(1)` - A memória alocada para as variáveis `A`, `B` e `Soma` é constante e não depende dos valores de entrada.
+
+---
+
+## ✅ Status
+
+- [x] Solução enviada e aceita.

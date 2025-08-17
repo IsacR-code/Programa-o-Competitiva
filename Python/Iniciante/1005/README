@@ -1,0 +1,42 @@
+# Beecrowd | 1005 | Média 1
+
+[Link para o Problema](https://www.beecrowd.com.br/judge/pt/problems/view/1005 )
+
+## 🎯 Resumo do Problema
+
+O desafio consiste em ler duas notas de um aluno, `A` e `B`. A nota `A` tem peso 3.5 e a nota `B` tem peso 7.5. O objetivo é calcular a média ponderada dessas notas e imprimir o resultado com 5 casas decimais, no formato "MEDIA = [resultado]".
+
+---
+
+## 🧠 Lógica da Solução
+
+A solução em Python aborda o problema de forma direta, utilizando a fórmula da média ponderada e formatação de string para a saída.
+
+1.  **Leitura das Notas:** As duas notas são lidas da entrada padrão. Como as notas podem ter valores decimais, a função `float()` é usada para converter as strings lidas pela função `input()` para o tipo ponto flutuante.
+    ```python
+    A = float(input())
+    B = float(input())
+    ```
+
+2.  **Cálculo da Média Ponderada:** A média é calculada seguindo a fórmula `(notaA * pesoA + notaB * pesoB) / (soma dos pesos)`. No código, isso é implementado como `(A * 3.5 + B * 7.5) / 11`, já que a soma dos pesos (3.5 + 7.5) é 11. O resultado é armazenado na variável `media`.
+    ```python
+    media = (A * 3.5 + B * 7.5) / 11
+    ```
+
+3.  **Impressão Formatada:** Uma *f-string* é utilizada para gerar a saída. A expressão `{media:.5f}` é a chave aqui: ela formata o valor da variável `media` para que seja exibido com exatamente cinco casas decimais, atendendo ao requisito de precisão do problema.
+    ```python
+    print(f"MEDIA = {media:.5f}")
+    ```
+
+---
+
+## Análise de Complexidade
+
+*   **Complexidade de Tempo:** `O(1)` - A solução consiste em um número fixo de operações aritméticas e de entrada/saída, que são executadas em tempo constante.
+*   **Complexidade de Espaço:** `O(1)` - A memória alocada para as variáveis `A`, `B` e `media` é constante e não varia com os valores de entrada.
+
+---
+
+## ✅ Status
+
+- [x] Solução enviada e aceita.

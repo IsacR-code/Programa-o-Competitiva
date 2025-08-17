@@ -1,0 +1,49 @@
+# Beecrowd | 1008 | Salário
+
+[Link para o Problema](https://www.beecrowd.com.br/judge/pt/problems/view/1008 )
+
+## 🎯 Resumo do Problema
+
+O desafio é calcular o salário de um funcionário. Para isso, devemos ler o número do funcionário, a quantidade de horas trabalhadas no mês e o valor que ele recebe por hora. O resultado deve ser apresentado em duas linhas: a primeira com o número do funcionário e a segunda com o salário calculado, formatado com duas casas decimais.
+
+---
+
+## 🧠 Lógica da Solução
+
+A solução em Python foi estruturada para ler os dados, realizar o cálculo e, em seguida, imprimir as informações em duas linhas separadas, conforme exigido.
+
+1.  **Leitura dos Dados:**
+    *   O número do funcionário é lido e convertido para inteiro com `int(input())`, sendo armazenado na variável `numb`.
+    *   O total de horas trabalhadas é lido e convertido para inteiro com `int(input())`, armazenado na variável `horas`.
+    *   O valor recebido por hora é lido e convertido para ponto flutuante com `float(input())`, armazenado na variável `pago`.
+    ```python
+    numb = int(input())
+    horas = int(input())
+    pago = float(input())
+    ```
+
+2.  **Cálculo do Salário:** O salário é calculado de forma simples, multiplicando o número de horas trabalhadas pelo valor pago por hora. O resultado é armazenado na variável `salario`.
+    ```python
+    salario = horas * pago
+    ```
+
+3.  **Impressão dos Resultados:** A saída é dividida em duas chamadas da função `print()`, uma para cada linha exigida:
+    *   A primeira impressão mostra o número do funcionário.
+    *   A segunda impressão mostra o salário. Uma *f-string* é usada para formatar o valor da variável `salario` com duas casas decimais (`.2f`) e adicionar o prefixo "U$ ".
+    ```python
+    print(f"NUMBER = {numb}")
+    print(f"SALARY = U$ {salario:.2f}")
+    ```
+
+---
+
+## Análise de Complexidade
+
+*   **Complexidade de Tempo:** `O(1)` - A solução envolve um número fixo de operações de entrada, um cálculo e duas operações de saída, resultando em uma complexidade de tempo constante.
+*   **Complexidade de Espaço:** `O(1)` - A memória utilizada para as variáveis `numb`, `horas`, `pago` e `salario` é constante.
+
+---
+
+## ✅ Status
+
+- [x] Solução enviada e aceita.

@@ -1,0 +1,50 @@
+# Beecrowd | 1001 | Extremamente Básico
+
+[Link para o Problema](https://www.beecrowd.com.br/judge/pt/problems/view/1001 )
+
+## 🎯 Resumo do Problema
+
+O desafio consiste em ler dois valores inteiros, armazená-los em variáveis (tradicionalmente `A` e `B`), calcular a soma desses valores e, em seguida, imprimir o resultado em um formato específico: "X = [valor]", onde `[valor]` é o resultado da soma.
+
+---
+
+## 🧠 Lógica da Solução
+
+A solução em Python envolve dois passos principais: a leitura da entrada (input) e a formatação da saída (output).
+
+1.  **Leitura da Entrada:**
+    *   A função `input()` é usada para ler uma linha da entrada padrão. Como o Beecrowd fornece os números em linhas separadas, a função `input()` será chamada duas vezes.
+    *   Cada valor lido pela função `input()` é uma string. Portanto, é necessário convertê-los para o tipo inteiro usando a função `int()`.
+    *   Os valores convertidos são armazenados nas variáveis `A` e `B`.
+
+2.  **Cálculo e Impressão:**
+    *   A soma de `A` e `B` é calculada e armazenada em uma variável `X`.
+    *   Para imprimir a saída no formato exato exigido ("X = [valor]"), utilizamos uma *f-string* em Python. As *f-strings* (`f"..."`) são uma maneira moderna e legível de embutir expressões e variáveis dentro de uma string.
+    *   A expressão `f"X = {X}"` substitui `{X}` pelo valor da variável `X`, garantindo que a saída corresponda perfeitamente ao que o problema espera.
+
+```python
+# Lê o primeiro valor da entrada e o converte para inteiro
+A = int(input())
+
+# Lê o segundo valor da entrada e o converte para inteiro
+B = int(input())
+
+# Calcula a soma e armazena na variável X
+X = A + B
+
+# Imprime o resultado utilizando uma f-string para formatar a saída
+print(f"X = {X}")
+```
+
+---
+
+## Análise de Complexidade
+
+*   **Complexidade de Tempo:** `O(1)` - As operações de leitura, conversão de tipo, soma e impressão são todas de tempo constante. Elas não dependem do tamanho ou do valor dos números de entrada.
+*   **Complexidade de Espaço:** `O(1)` - A memória utilizada para armazenar as variáveis `A`, `B` e `X` é fixa e não escala com a entrada.
+
+---
+
+## ✅ Status
+
+- [x] Solução enviada e aceita.

@@ -1,0 +1,44 @@
+# Beecrowd | 1007 | Diferença
+
+[Link para o Problema](https://www.beecrowd.com.br/judge/pt/problems/view/1007 )
+
+## 🎯 Resumo do Problema
+
+O desafio consiste em ler quatro valores inteiros: `A`, `B`, `C` e `D`. Em seguida, deve-se calcular a diferença entre o produto de `A` e `B` e o produto de `C` e `D`. A fórmula é `(A * B - C * D)`. O resultado deve ser impresso no formato "DIFERENCA = [resultado]".
+
+---
+
+## 🧠 Lógica da Solução
+
+A solução em Python foi implementada de maneira clara, seguindo os passos de leitura, cálculo e impressão.
+
+1.  **Leitura dos Valores:** Os quatro valores inteiros são lidos da entrada padrão, um por linha. A função `int(input())` é usada para cada um deles, garantindo que sejam lidos e convertidos para o tipo inteiro.
+    ```python
+    A = int(input())
+    B = int(input())
+    C = int(input())
+    D = int(input())
+    ```
+
+2.  **Cálculo da Diferença:** A expressão matemática `(A * B - C * D)` é calculada. O resultado dessa operação é armazenado na variável `diferenca`.
+    ```python
+    diferenca = (A * B - C * D)
+    ```
+
+3.  **Impressão do Resultado:** Uma *f-string* é utilizada para formatar a saída. Ela combina o texto "DIFERENCA = " com o valor armazenado na variável `diferenca`, produzindo a string final que é exibida no console.
+    ```python
+    print(f'DIFERENCA = {diferenca}')
+    ```
+
+---
+
+## Análise de Complexidade
+
+*   **Complexidade de Tempo:** `O(1)` - A solução executa um número fixo de operações (quatro leituras, duas multiplicações, uma subtração e uma impressão), o que a caracteriza como de tempo constante.
+*   **Complexidade de Espaço:** `O(1)` - A memória necessária para armazenar as variáveis `A`, `B`, `C`, `D` e `diferenca` é constante e não escala com os valores de entrada.
+
+---
+
+## ✅ Status
+
+- [x] Solução enviada e aceita.

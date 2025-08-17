@@ -1,0 +1,34 @@
+# Beecrowd | 1000 | Hello World!
+
+[Link para o Problema](https://www.beecrowd.com.br/judge/pt/problems/view/1000 )
+
+## 🎯 Resumo do Problema
+
+O objetivo deste problema é extremamente simples: imprimir a frase "Hello World!" na tela, seguida por uma quebra de linha. Este é tradicionalmente o primeiro programa que se aprende em qualquer nova linguagem de programação e serve como um teste básico do ambiente de desenvolvimento e submissão da plataforma.
+
+---
+
+## 🧠 Lógica da Solução
+
+A solução em Python para este desafio é direta e utiliza a função `print()`, que é a principal ferramenta da linguagem para exibir dados no console (saída padrão).
+
+1.  A função `print()` é chamada com a string `"Hello World!"` como seu argumento.
+2.  Por padrão, a função `print()` em Python já adiciona uma quebra de linha (`\n`) ao final da sua saída.
+3.  Portanto, uma única linha de código é suficiente para atender a todos os requisitos do problema.
+
+```python
+print("Hello World!")
+```
+
+---
+
+## Complexity Analysis
+
+*   **Complexidade de Tempo:** `O(1)` - A operação de imprimir uma string constante não depende do tamanho de nenhuma entrada. Ela leva um tempo constante para ser executada.
+*   **Complexidade de Espaço:** `O(1)` - A quantidade de memória utilizada também é constante. Apenas o espaço para armazenar a string "Hello World!" é necessário, o que não varia.
+
+---
+
+## ✅ Status
+
+- [x] Solução enviada e aceita.

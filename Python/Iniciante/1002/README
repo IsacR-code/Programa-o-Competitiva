@@ -1,0 +1,46 @@
+# Beecrowd | 1002 | Área do Círculo
+
+[Link para o Problema](https://www.beecrowd.com.br/judge/pt/problems/view/1002 )
+
+## 🎯 Resumo do Problema
+
+O desafio é calcular a área de um círculo a partir de um valor de raio fornecido. O valor de π (pi) a ser utilizado é 3.14159. O resultado deve ser impresso com 4 casas decimais, no formato "A=[area]".
+
+---
+
+## 🧠 Lógica da Solução
+
+A solução foi implementada em Python e segue uma abordagem direta, dividida em quatro passos claros, exatamente como no código fornecido.
+
+1.  **Definição de π (pi):** Primeiro, o valor de π é definido e armazenado em uma variável chamada `n`.
+    ```python
+    n = 3.14159
+    ```
+
+2.  **Leitura do Raio:** A função `input()` é usada para ler o valor do raio. Como o raio pode ser um número com casas decimais, o valor lido (que é uma string) é imediatamente convertido para o tipo `float`.
+    ```python
+    raio = float(input())
+    ```
+
+3.  **Cálculo da Área:** A área do círculo é calculada utilizando a fórmula matemática *área = π * raio²*. No código, o operador `**` é usado para realizar a exponenciação (elevar o raio ao quadrado).
+    ```python
+    area = n * (raio ** 2)
+    ```
+
+4.  **Impressão Formatada:** Para exibir o resultado final, uma *f-string* é utilizada. Ela permite formatar a saída de forma precisa. A expressão `{area:.4f}` dentro da string garante que o valor da variável `area` seja formatado para ter exatamente quatro casas decimais, cumprindo o requisito do problema.
+    ```python
+    print(f"A={area:.4f}")
+    ```
+
+---
+
+## Análise de Complexidade
+
+*   **Complexidade de Tempo:** `O(1)` - Todas as operações (atribuição, leitura, conversão de tipo, cálculo matemático e impressão) são executadas em tempo constante.
+*   **Complexidade de Espaço:** `O(1)` - A memória necessária para as variáveis `n`, `raio` e `area` é fixa e não depende do valor da entrada.
+
+---
+
+## ✅ Status
+
+- [x] Solução enviada e aceita.
